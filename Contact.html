@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: Arial; background:#f5f5f5;">
+
+  <div style="max-width:500px; margin:50px auto; background:#fff; padding:30px; border-radius:10px;">
+    
+    <h2 style="text-align:center;">Contact Us</h2>
+
+    <!-- Replace action with your service (Web3Forms / Formspree etc.) -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- REQUIRED for Web3Forms -->
+      <input type="hidden" name="access-key" value="112ce92a-567a-4049-b9c4-9ff6ff293965">
+
+      <input type="text" name="name" placeholder="Your Name" required 
+        style="width:100%; padding:10px; margin:10px 0;">
+
+      <input type="email" name="email" placeholder="Your Email" required 
+        style="width:100%; padding:10px; margin:10px 0;">
+
+      <input type="text" name="subject" placeholder="Subject" 
+        style="width:100%; padding:10px; margin:10px 0;">
+
+      <textarea name="message" placeholder="Your Message" required 
+        style="width:100%; padding:10px; margin:10px 0; height:120px;"></textarea>
+
+      <button type="submit" 
+        style="width:100%; padding:12px; background:#007BFF; color:white; border:none;">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
